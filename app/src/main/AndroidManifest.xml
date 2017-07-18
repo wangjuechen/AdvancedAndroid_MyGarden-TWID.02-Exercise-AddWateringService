@@ -18,6 +18,10 @@
                 android:name="android.appwidget.provider"
                 android:resource="@xml/plant_widget_info" />
         </receiver>
+        
+        <service android:name=".PlantWateringService">
+
+        </service>
 
         <!-- TODO (2): Create a plant watering service that extends IntentService and supports the
         action ACTION_WATER_PLANTS which updates last_watered timestamp for all plants still alive -->
